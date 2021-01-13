@@ -63,13 +63,15 @@ For easier read:
 ##### Transform: 
 I performed cleaning, filtering, joining, changing dataframe layout, aggregating and performing normalization for the datasets. I will list what I did for each dataset in details below:
 
-1.    irena.org, bp.com,
+1.    irena.org, bp.com
+
     - Cleaned the data to get the dataset display in the proper way for filtering, renaming, aggregating and performing normalization
     - Filtered out unneeded columns and rows, and then extracted data only from my three selected countries
     - Aggregated the three countries’ datasets together as one
     - Performed normalization of the dataset then renamed the columns
     
 2.    bp.com
+
     - Cleaned the data to get the dataset display in the proper way for filtering, renaming, aggregating and performing normalization
     - Filtered out unneeded columns and rows, and then extracted data only from my three selected countries
     - Changed the dataframe layout, so the year values are under the year column
@@ -78,12 +80,14 @@ I performed cleaning, filtering, joining, changing dataframe layout, aggregating
     - Performed normalization of the dataset 
     
 3.    wesr.unep.org
+
     - Cleaned the data to get the dataset display in the proper way for filtering, renaming, aggregating and performing normalization
     - Filtered to get only my selected years 2030 and 2050
     - Aggregated the datatsets
     - Performed normalization of the dataset then renamed the columns
     
 4.    eia.gov
+
     - Renamed the columns and changed the order of the years from descending to ascending
     - Filtered out some years for the US one
     - Performed normalization of the dataset 
