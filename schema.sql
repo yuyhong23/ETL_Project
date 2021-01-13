@@ -131,4 +131,47 @@ ALTER COLUMN year_id TYPE SMALLINT,
 ADD CONSTRAINT fk_bp_renewable_consumption_years FOREIGN KEY(year_id)
 REFERENCES years(year_id);
 
-SELECT * from bp_renewable_consumption;
+-- Create index on the outputs for optimization
+CREATE INDEX China_EJ_input_equiv_re_index 
+on bp_renewable_consumption ("China_EJ_input_equiv");
+
+CREATE INDEX Germany_EJ_input_equiv_re_index 
+on bp_renewable_consumption ("Germany_EJ_input_equiv");
+
+CREATE INDEX USA_EJ_input_equiv_re_index 
+on bp_renewable_consumption ("USA_EJ_input_equiv");
+
+-- For une_emission_goals table
+ALTER TABLE une_emission_goals  
+ADD PRIMARY KEY (country_id, year_id),
+ALTER COLUMN country_id TYPE SMALLINT,
+ALTER COLUMN year_id TYPE SMALLINT,
+ADD CONSTRAINT fk_une_emission_goals_countries FOREIGN KEY(country_id)
+REFERENCES countries(country_id),
+ADD CONSTRAINT fk_une_emission_goals_years FOREIGN KEY(year_id)
+REFERENCES years(year_id);
+
+--The value column is a string instead of integer, so have to change it to varchar instead
+ALTER TABLE une_emission_goals
+ALTER COLUMN "value" TYPE VARCHAR;
+
+-- Create index on the output for optimization
+CREATE INDEX value_index 
+on une_emission_goals("value");
+
+-- For eia_co2_emission table
+ALTER TABLE eia_co2_emission 
+ADD PRIMARY KEY (year_id),
+ALTER COLUMN year_id TYPE SMALLINT,
+ADD CONSTRAINT fk_eia_co2_emission_years FOREIGN KEY(year_id)
+REFERENCES years(year_id);
+
+-- Create index on the outputs for optimization
+CREATE INDEX china_emission_index 
+on eia_co2_emission (china_emission);
+
+CREATE INDEX germany_emission_index 
+on eia_co2_emission (germany_emission);
+
+CREATE INDEX usa_emission_index 
+on eia_co2_emission (usa_emission);
