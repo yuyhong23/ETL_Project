@@ -47,7 +47,7 @@ The goal of this individual project is to use what I have learned so far from th
 
 For this project, my focus in on extracting and organizing data about renewable energy in China, Germany and the United States. To elaborate, the data are on electricity installed capacity (MW) for both non and renewable energy, total energy consumption, renewable energy type consumption, CO2 emission, and 2030 and 2050 agricultural GHG emission goals.
 
-##### Extract:
+### Extract:
 I extracted my dataset from four different sources: irena.org, bp.com, wesr.unep.org, and eia.gov. The dataset from irena.org was formatted as Excel (XLSB) file, the ones from bp.com were formatted as Excel (XLXS) file, the one from wesr.unep.org was formatted as CSV, and the one from eia.gov was in the form of JSON from API calling.
 
 For easier read:
@@ -60,7 +60,7 @@ For easier read:
 4.    eia.gov
     - API
 
-##### Transform: 
+### Transform: 
 I performed cleaning, filtering, joining, changing dataframe layout, aggregating and performing normalization for the datasets. I will list what I did for each dataset in details below:
 
 1.    irena.org, bp.com
@@ -92,7 +92,7 @@ I performed cleaning, filtering, joining, changing dataframe layout, aggregating
     - Filtered out some years for the US one
     - Performed normalization of the dataset 
 
-##### Load: 
+### Load: 
 
 I loaded the transformed dataframes to postgres in the form of tables. I chose to do that because the datasets are related to each other either by year or by country.
 
