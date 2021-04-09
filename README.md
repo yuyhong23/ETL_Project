@@ -43,6 +43,9 @@ The goal of this individual project is to use what I have learned so far from th
 - ProjectReport
     - Word doc that contains my project report, which is contained here also
 
+- Images
+    - Code snippets and postgresql tables screenshots
+
 # Project Report
 
 For this project, my focus in on extracting and organizing data about renewable energy in China, Germany and the United States. To elaborate, the data are on electricity installed capacity (MW) for both non and renewable energy, total energy consumption, renewable energy type consumption, CO2 emission, and 2030 and 2050 agricultural GHG emission goals.
@@ -70,11 +73,11 @@ I performed cleaning, filtering, joining, changing dataframe layout, aggregating
     - Aggregated the three countries’ datasets together as one
     - Performed normalization of the dataset then renamed the columns
 
-![irenaimagebefore](images/eicpre.png)
 Before
+![irenaimagebefore](images/eicpre.png)
 
-![irenaimageafter](images/eiccleaned.png)
 After
+![irenaimageafter](images/eiccleaned.png)
 
 2.    bp.com
 
@@ -85,11 +88,11 @@ After
     - Aggregated the three countries’ datasets together as one
     - Performed normalization of the dataset 
 
-![bpimagebefore](images/bppre1.png)
 Before
+![bpimagebefore](images/bppre1.png)
 
-![bpimageafter](images/bpcleaned.png)
 After
+![bpimageafter](images/bpcleaned.png)
 
 3.    wesr.unep.org
 
@@ -98,11 +101,11 @@ After
     - Aggregated the datatsets
     - Performed normalization of the dataset then renamed the columns
  
-![unepimagebefore](images/uneppre.png)
 Before
+![unepimagebefore](images/uneppre.png)
 
-![unepimageafter](images/unepcleaned.png)
-After 
+After
+![unepimageafter](images/unepcleaned.png) 
  
 4.    eia.gov
 
@@ -110,11 +113,11 @@ After
     - Filtered out some years for the US one
     - Performed normalization of the dataset 
 
-![co2imagebefore](images/co2pre.png)
 Before
+![co2imagebefore](images/co2pre.png)
 
-![co2imageafter](images/co2cleaned.png)
 After
+![co2imageafter](images/co2cleaned.png)
 
 ### Load: 
 
