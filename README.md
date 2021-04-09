@@ -69,7 +69,13 @@ I performed cleaning, filtering, joining, changing dataframe layout, aggregating
     - Filtered out unneeded columns and rows, and then extracted data only from my three selected countries
     - Aggregated the three countries’ datasets together as one
     - Performed normalization of the dataset then renamed the columns
-    
+
+![irenaimagebefore](images/eicpre.png)
+Before
+
+![irenaimageafter](images/eiccleaned.png)
+After
+
 2.    bp.com
 
     - Cleaned the data to get the dataset display in the proper way for filtering, renaming, aggregating and performing normalization
@@ -78,19 +84,37 @@ I performed cleaning, filtering, joining, changing dataframe layout, aggregating
     - Renamed the columns
     - Aggregated the three countries’ datasets together as one
     - Performed normalization of the dataset 
-    
+
+![bpimagebefore](images/bppre1.png)
+Before
+
+![bpimageafter](images/bpcleaned.png)
+After
+
 3.    wesr.unep.org
 
     - Cleaned the data to get the dataset display in the proper way for filtering, renaming, aggregating and performing normalization
     - Filtered to get only my selected years 2030 and 2050
     - Aggregated the datatsets
     - Performed normalization of the dataset then renamed the columns
-    
+ 
+![unepimagebefore](images/uneppre.png)
+Before
+
+![unepimageafter](images/unepcleaned.png)
+After 
+ 
 4.    eia.gov
 
     - Renamed the columns and changed the order of the years from descending to ascending
     - Filtered out some years for the US one
     - Performed normalization of the dataset 
+
+![co2imagebefore](images/co2pre.png)
+Before
+
+![co2imageafter](images/co2cleaned.png)
+After
 
 ### Load: 
 
